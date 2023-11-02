@@ -1,0 +1,42 @@
+.navbar {
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    background-color: #fff;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 1em 2em;
+    justify-content: space-between;
+}
+
+.navItem {
+    /* border: 1px solid black; */
+    margin-left: 1em;
+}
+
+.searchBar {
+    background-color: #ededed;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 50%;
+    width: 60%;
+}
+
+.searchBar input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    margin-left: 10px;
+}

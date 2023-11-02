@@ -1,0 +1,68 @@
+.container {
+    height: auto;
+    width: 50vw;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 1);
+    padding: 2.5em;
+    position: absolute;
+    overflow-y: scroll;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-bottom: 2em;
+}
+
+.closeBtn {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container h2 {
+    font-weight: 600;
+}
+
+.container h5 {
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.dropdownControl {
+    border-radius: 10px;
+    /* Adjust the border radius as needed */
+}
+
+.uploadContainer {
+    margin-top: 2em;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    cursor: pointer;
+    height: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.uploadContainer p {
+    font-weight: 400;
+    color: rgba(71, 83, 103, 1);
+    font-size: .9rem;
+}
+
+.uploadContainer span {
+    color: rgba(0, 72, 173, 1);
+    font-weight: 500;
+}
