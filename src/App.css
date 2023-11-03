@@ -66,3 +66,12 @@
     border-bottom: 1px solid grey;
     line-height: 2em;
 }
+
+.historyContainer table {
+    text-align: left;
+}
+
+.historyContainer table tr {
+    padding: 1em;
+    border: 1px solid red;
+}

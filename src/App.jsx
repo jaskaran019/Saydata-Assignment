@@ -48,32 +48,69 @@ function App() {
         <div className="historyContainer">
           <h2>Recent Files</h2>
           <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Duration</th>
-            <th>Date Created</th>
-            <th>Last Updated</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Peng Meeting</td>
-            <td>Audio</td>
-            <td>05:24</td>
-            <td>20/10/2023</td>
-            <td>05:24</td>
-          </tr>
-          <tr>
-            <td>Data 2.1</td>
-            <td>Data 2.2</td>
-            <td>Data 2.3</td>
-          </tr>
-          {/* Add more rows as needed */}
-        </tbody>
-      </table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Duration</th>
+                <th>Date Created</th>
+                <th>Last Updated</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Peng Meeting</td>
+                <td>Audio</td>
+                <td>05:24</td>
+                <td>20/10/2023</td>
+                <td>05:24</td>
+              </tr>
+              <tr>
+                <td>Tofunmi Idowu</td>
+                <td>Audio</td>
+                <td>04:26</td>
+                <td>01/07/2023</td>
+                <td>05:24</td>
+              </tr>
+              <tr>
+                <td>Peng Meeting</td>
+                <td>Audio</td>
+                <td>05:24</td>
+                <td>20/10/2023</td>
+                <td>05:24</td>
+              </tr>
+              <tr>
+                <td>Peng Meeting</td>
+                <td>Audio</td>
+                <td>05:24</td>
+                <td>20/10/2023</td>
+                <td>05:24</td>
+              </tr>
+              <tr>
+                <td>Peng Meeting</td>
+                <td>Audio</td>
+                <td>05:24</td>
+                <td>20/10/2023</td>
+                <td>05:24</td>
+              </tr>
+              <tr>
+                <td>Peng Meeting</td>
+                <td>Audio</td>
+                <td>05:24</td>
+                <td>20/10/2023</td>
+                <td>05:24</td>
+              </tr>
+              <tr>
+                <td>Peng Meeting</td>
+                <td>Audio</td>
+                <td>05:24</td>
+                <td>20/10/2023</td>
+                <td>05:24</td>
+              </tr>
+              {/* Add more rows as needed */}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
