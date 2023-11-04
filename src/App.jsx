@@ -1,5 +1,6 @@
 import './App.css';
-import React, { useState } from 'react'; 
+import React, { useState , useEffect} from 'react'; 
+import axios from 'axios';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Transcribe from './components/Transcribe';
@@ -15,6 +16,24 @@ function App() {
     setTranscribeVisible(false);
     setBrightness(100);
   };
+
+  // Table data
+  const [data, setData] = useState([]);
+  
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`${process.env.PUBLIC_URL}/userdata.json`); // Replace with the actual URL or the path to your JSON file
+      const data = response.data.history; // Assuming "history" contains the data
+      setData(data);
+      console.log(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  }
   return (
     <>
     <div className="masterContainer" style={{ filter: `brightness(${brightness}%)` }}>
@@ -60,63 +79,17 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-              <td><input type="checkbox" /></td>
-                <td>Peng Meeting</td>
-                <td>Audio</td>
-                <td>05:24</td>
-                <td>20/10/2023</td>
-                <td>05:24</td>
-              </tr>
-              <tr>
+              {data.map((entry, index) => (
+                <tr key={index}>
                 <td><input type="checkbox" /></td>
-                <td>Tofunmi Idowu</td>
-                <td>Audio</td>
-                <td>04:26</td>
-                <td>01/07/2023</td>
-                <td>05:24</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Peng Meeting</td>
-                <td>Audio</td>
-                <td>05:24</td>
-                <td>20/10/2023</td>
-                <td>05:24</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Peng Meeting</td>
-                <td>Audio</td>
-                <td>05:24</td>
-                <td>20/10/2023</td>
-                <td>05:24</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Peng Meeting</td>
-                <td>Audio</td>
-                <td>05:24</td>
-                <td>20/10/2023</td>
-                <td>05:24</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Peng Meeting</td>
-                <td>Audio</td>
-                <td>05:24</td>
-                <td>20/10/2023</td>
-                <td>05:24</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Peng Meeting</td>
-                <td>Audio</td>
-                <td>05:24</td>
-                <td>20/10/2023</td>
-                <td>05:24</td>
-              </tr>
-              {/* Add more rows as needed */}
+                  <td>{entry.name}</td>
+                  <td>{entry.type}</td>
+                  <td>{entry.duration}</td>
+                  <td>{entry.date_created}</td>
+                  <td>{entry.last_updated}</td>
+                  <td>{entry.action}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
