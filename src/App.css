@@ -68,10 +68,20 @@
 }
 
 .historyContainer table {
+    margin-top: 1em;
     text-align: left;
+    /* bordeR: 1px solid blue; */
+    width: 100%;
+}
+
+.historyContainer table th {
+    padding: 1em;
+}
+
+.historyContainer table td {
+    padding: 1em 1em;
 }
 
 .historyContainer table tr {
-    padding: 1em;
-    border: 1px solid red;
+    border-bottom: 1px solid rgb(166, 166, 166);
 }

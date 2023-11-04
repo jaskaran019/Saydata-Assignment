@@ -48,8 +48,9 @@ function App() {
         <div className="historyContainer">
           <h2>Recent Files</h2>
           <table>
-            <thead>
+            <thead style={{backgroundColor:"rgba(235, 243, 255, 1)", border:"1px solid black"}}>
               <tr>
+                <th><input type="checkbox" /></th>
                 <th>Name</th>
                 <th>Type</th>
                 <th>Duration</th>
@@ -60,6 +61,7 @@ function App() {
             </thead>
             <tbody>
               <tr>
+              <td><input type="checkbox" /></td>
                 <td>Peng Meeting</td>
                 <td>Audio</td>
                 <td>05:24</td>
@@ -67,6 +69,7 @@ function App() {
                 <td>05:24</td>
               </tr>
               <tr>
+                <td><input type="checkbox" /></td>
                 <td>Tofunmi Idowu</td>
                 <td>Audio</td>
                 <td>04:26</td>
@@ -74,6 +77,7 @@ function App() {
                 <td>05:24</td>
               </tr>
               <tr>
+                <td><input type="checkbox" /></td>
                 <td>Peng Meeting</td>
                 <td>Audio</td>
                 <td>05:24</td>
@@ -81,6 +85,7 @@ function App() {
                 <td>05:24</td>
               </tr>
               <tr>
+                <td><input type="checkbox" /></td>
                 <td>Peng Meeting</td>
                 <td>Audio</td>
                 <td>05:24</td>
@@ -88,6 +93,7 @@ function App() {
                 <td>05:24</td>
               </tr>
               <tr>
+                <td><input type="checkbox" /></td>
                 <td>Peng Meeting</td>
                 <td>Audio</td>
                 <td>05:24</td>
@@ -95,6 +101,7 @@ function App() {
                 <td>05:24</td>
               </tr>
               <tr>
+                <td><input type="checkbox" /></td>
                 <td>Peng Meeting</td>
                 <td>Audio</td>
                 <td>05:24</td>
@@ -102,6 +109,7 @@ function App() {
                 <td>05:24</td>
               </tr>
               <tr>
+                <td><input type="checkbox" /></td>
                 <td>Peng Meeting</td>
                 <td>Audio</td>
                 <td>05:24</td>
